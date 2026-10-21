@@ -1,0 +1,8 @@
+local r=require('rules')
+assert(r.width>0 and r.height>0)
+assert(r.dashSpeed>r.playerSpeed)
+assert(r.bulletSpeed>r.playerSpeed)
+assert(r.dashCooldown>r.dashDuration)
+assert(r.fireDelay>0 and r.startingHealth>=1)
+assert(r.waveBase+r.waveGrowth==8)
+print('Lua rules: 6 checks passed')
